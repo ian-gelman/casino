@@ -1,9 +1,9 @@
 % Casino algorithm - Ian Gelman
 % pull out game when lol?
 
-iter = 10;                                             % Playing 100 rounds
+iter = 100;                                             % # of rounds to simulate
 start_bread = 800;                                      % Starting with $800
-shove_pct = 0;                                          % Pctage of current money you 
+shove_pct = 7/8;                                        % Pctage of current money you 
                                                         % take home every round
 
 pocket_bread = zeros(1,iter);                           % Money you currently have
@@ -31,7 +31,7 @@ plot(pocket_bread)
 hold on
 plot(takehome_bread)
 hold off
-title('What happens if you always bet on black? (Shoving 0%)')
+title('What happens if you always bet on black? (Shoving 87.5%)')
 xlabel('Round #')
 ylabel('Money ($)')
 legend('Money to bet with', 'Money to keep')
